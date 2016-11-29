@@ -1,0 +1,105 @@
+library(readr)
+> ipl <- read_csv("C:/Users/Administrator/Downloads/ipl.zip")
+Multiple files in zip: reading 'deliveries.csv'
+Parsed with column specification:
+cols(
+  .default = col_integer(),
+  batting_team = col_character(),
+  bowling_team = col_character(),
+  batsman = col_character(),
+  non_striker = col_character(),
+  bowler = col_character(),
+  player_dismissed = col_character(),
+  dismissal_kind = col_character(),
+  fielder = col_character()
+)
+See spec(...) for full column specifications.
+> View(ipl)
+> View(ipl)
+> View(ipl)
+> view(ipl)
+Error: could not find function "view"
+> View(ipl)
+> subset(acs,over=1)
+Error in subset(acs, over = 1) : object 'acs' not found
+> subset(ipl,over=1)
+# A tibble: 136,598 × 21
+   match_id inning          batting_team                bowling_team  over  ball     batsman
+      <int>  <int>                 <chr>                       <chr> <int> <int>       <chr>
+1         1      1 Kolkata Knight Riders Royal Challengers Bangalore     1     1  SC Ganguly
+2         1      1 Kolkata Knight Riders Royal Challengers Bangalore     1     2 BB McCullum
+3         1      1 Kolkata Knight Riders Royal Challengers Bangalore     1     3 BB McCullum
+4         1      1 Kolkata Knight Riders Royal Challengers Bangalore     1     4 BB McCullum
+5         1      1 Kolkata Knight Riders Royal Challengers Bangalore     1     5 BB McCullum
+6         1      1 Kolkata Knight Riders Royal Challengers Bangalore     1     6 BB McCullum
+7         1      1 Kolkata Knight Riders Royal Challengers Bangalore     1     7 BB McCullum
+8         1      1 Kolkata Knight Riders Royal Challengers Bangalore     2     1 BB McCullum
+9         1      1 Kolkata Knight Riders Royal Challengers Bangalore     2     2 BB McCullum
+10        1      1 Kolkata Knight Riders Royal Challengers Bangalore     2     3 BB McCullum
+# ... with 136,588 more rows, and 14 more variables: non_striker <chr>, bowler <chr>,
+#   is_super_over <int>, wide_runs <int>, bye_runs <int>, legbye_runs <int>, noball_runs <int>,
+#   penalty_runs <int>, batsman_runs <int>, extra_runs <int>, total_runs <int>,
+#   player_dismissed <chr>, dismissal_kind <chr>, fielder <chr>
+> View(ipl)
+> library(readr)
+> deliveries <- read_csv("C:/Users/Administrator/Downloads/deliveries.csv")
+Parsed with column specification:
+cols(
+  .default = col_integer(),
+  batting_team = col_character(),
+  bowling_team = col_character(),
+  batsman = col_character(),
+  non_striker = col_character(),
+  bowler = col_character(),
+  player_dismissed = col_character(),
+  dismissal_kind = col_character(),
+  fielder = col_character()
+)
+See spec(...) for full column specifications.
+> View(deliveries)
+> library(readr)
+> matches <- read_csv("C:/Users/Administrator/Downloads/matches.csv")
+Parsed with column specification:
+cols(
+  id = col_integer(),
+  season = col_integer(),
+  city = col_character(),
+  date = col_date(format = ""),
+  team1 = col_character(),
+  team2 = col_character(),
+  toss_winner = col_character(),
+  toss_decision = col_character(),
+  result = col_character(),
+  dl_applied = col_integer(),
+  winner = col_character(),
+  win_by_runs = col_integer(),
+  win_by_wickets = col_integer(),
+  player_of_match = col_character(),
+  venue = col_character(),
+  umpire1 = col_character(),
+  umpire2 = col_character(),
+  umpire3 = col_character()
+)
+> View(matches)
+> hist(matches$winner)
+Error in hist.default(matches$winner) : 'x' must be numeric
+> View(ipl)
+> View(matches)
+> hist(matches$season)
+> hist(matches$win_by_runs)
+> View(deliveries)
+> plot(x=inning,y=batsman_runs where inning=1)
+Error: unexpected symbol in "plot(x=inning,y=batsman_runs where"
+> plot(x=inning=1,y=batsman_runs where inning=1)
+Error: unexpected '=' in "plot(x=inning="
+> plot(x=inning=1,y=batsman_runs)
+Error: unexpected '=' in "plot(x=inning="
+> plot(x=inning=,y=batsman_runs for inning=1)
+Error: unexpected '=' in "plot(x=inning="
+> View(ipl)
+> hist(matches$season)
+> View(matches)
+> ggplot(matches,aes(x=season,y=city,group=winner))+geom_line(aes(colour=winner))+geom_point(pch=18,size=4)
+Error: could not find function "ggplot"
+> library(ggplot2)
+Error in library(ggplot2) : there is no package called ‘ggplot2’
